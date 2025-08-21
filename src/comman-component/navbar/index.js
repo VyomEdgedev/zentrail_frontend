@@ -13,6 +13,9 @@ export default function Navbar() {
       icon: "/icons/category.png",
       link: "/category",
     },
+
+
+    
     {
       label: "Resources",
       icon: "/icons/resources.png",
