@@ -13,12 +13,14 @@ export default function Navbar() {
       icon: "/icons/about.png",
       link: "/about",
     },
-
     {
       label: "Category",
       icon: "/icons/category.png",
       link: "/category",
     },
+
+
+    
     {
       label: "Resources",
       icon: "/icons/resources.png",
