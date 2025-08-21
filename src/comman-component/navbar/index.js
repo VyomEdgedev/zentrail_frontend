@@ -8,7 +8,6 @@ export default function Navbar() {
       icon: "/icons/about.png",
       link: "/about",
     },
-    
     {
       label: "Category",
       icon: "/icons/category.png",
