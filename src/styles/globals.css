@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  --primaryColor: #35c0f0;
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -22,20 +23,71 @@
 body {
   /* background: var(--background); */
   /* color: var(--foreground); */
-  font-family: DM Sans;
+  /* font-family: DM Sans; */
 }
 
 .commonText {
-    font-family: DM Sans;
+  font-family: DM Sans;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0;
-  color: #1A2E33;
+  color: #1a2e33;
 }
 .footer_commanText {
   font-family: DM Sans;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0;
-
 }
+.dm_sans {
+  font-family: DM Sans !important;
+}
+.responsive-text {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 16px;
+
+  @media (min-width: 640px) {
+    font-size: 18px;
+    line-height: 1.625rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.custom-container {
+  max-width: 1280px; 
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;  
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .custom-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .custom-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .custom-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
