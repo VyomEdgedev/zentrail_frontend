@@ -47,7 +47,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#17361E] text-white w-full">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 py-10">
+      <div className="custom-container px-4 sm:px-6 lg:px-2 py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 border-b border-gray-500 pb-8">
           <div>
             <Image
