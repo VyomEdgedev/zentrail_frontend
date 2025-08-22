@@ -26,7 +26,7 @@ const ForgetForm = () => {
                         placeholder="Enter your email"
                         required
                     />
-                    <p className='text-xs dm_sans text-[#00000080]'>{`We'll send you a link to reset your password.`}</p>
+                    <p className='text-xs dm_sans text-[#00000080] mt-1'>{`We'll send you a link to reset your password.`}</p>
                     <div className="flex flex-wrap gap-3 md:gap-2 sm:gap-2 mt-10">
                         <div>
                             <CustomButton2 variant="outlined" color="#000000" sx={buttonStyle.forgetButton} >
