@@ -15,9 +15,13 @@ const ContactForm = () => {
                     <TextInput label="Mobile Number" placeholder="Enter your mobile number" required />
                     <TextInput label="Travel Month" placeholder="Month (Optional)" required />
                     <TextInput label="Number of Travelers" placeholder="Enter number of travelers" required />
+                   
                 </div>
                  <div className=''>
                     <TextInput label="Email Address" placeholder="Enter your email" required />
+                     <div>
+                        <label>Preferred Contact Method</label>
+                    </div>
                 </div>
                 <div className='col-span-2 text-center'>
                     <CustomButton width={300}>Send Message</CustomButton>

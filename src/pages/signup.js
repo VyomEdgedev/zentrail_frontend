@@ -10,12 +10,12 @@ const signup = () => {
   return (
     <>
       <SEO
-        url="http://localhost:3000/signup"
+        // url="http://localhost:3000/signup"
         metaTitle="Create Your ZenTrail Account and Let’s begin your travel story"
         metaDescription="Welcome to ZenTrail — where every journey begins with a feeling. Whether you're in search of        peace, thrill, or just something new — we help you discover destinations that match your mood.
         Just sign up in a few simple steps and unlock a world of authentic, unexplored trails."
         keywords="Welcome to ZenTrai"
-        canonical="http://localhost:3000/signup"
+        // canonical="http://localhost:3000/signup"
         ogTitle="Create Your ZenTrail Account and Let’s begin your travel story"
         ogDescription="Welcome to ZenTrail — where every journey begins with a feeling. Whether you're in search of peace, thrill, or just something new — we help you discover destinations that match your mood.
         Just sign up in a few simple steps and unlock a world of authentic, unexplored trails."

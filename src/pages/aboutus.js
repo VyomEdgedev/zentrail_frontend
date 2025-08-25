@@ -22,12 +22,12 @@ const AboutUs = () => {
   return (
     <>
       <SEO
-        url="http://localhost:3000/aboutus"
+        // url="http://localhost:3000/aboutus"
         metaTitle="Create Your ZenTrail Account and Let’s begin your travel story"
         metaDescription="Welcome to ZenTrail — where every journey begins with a feeling. Whether you're in search of        peace, thrill, or just something new — we help you discover destinations that match your mood.
             Just sign up in a few simple steps and unlock a world of authentic, unexplored trails."
         keywords="Welcome to ZenTrai"
-        canonical="http://localhost:3000/aboutus"
+        // canonical="http://localhost:3000/aboutus"
         ogTitle="Create Your ZenTrail Account and Let’s begin your travel story"
         ogDescription="Welcome to ZenTrail — where every journey begins with a feeling. Whether you're in search of peace, thrill, or just something new — we help you discover destinations that match your mood.
             Just sign up in a few simple steps and unlock a world of authentic, unexplored trails."

@@ -111,7 +111,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col items-start px-6 gap-6 mt-4">
               {menuItems.map((item) => (
-                <a
+                <Link
                   key={item.label}
                   href={item.link}
                   className="flex items-center gap-3 text-lg font-medium"
@@ -124,7 +124,7 @@ export default function Navbar() {
                     alt={item.label}
                   />
                   {item.label}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
