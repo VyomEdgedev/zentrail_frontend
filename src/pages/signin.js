@@ -33,9 +33,11 @@ const signin = () => {
             />
             <div className="flex gap-1 flex-wrap">
               <div className="flex-1">
+                <Link href={"forgetpassword"}>
                 <CustomButton2 variant="outlined" color="#000000" width={"100%"} height="48px">
                   Forgot Password?
                 </CustomButton2>
+                </Link>
               </div>
             
               <div className="flex-1">

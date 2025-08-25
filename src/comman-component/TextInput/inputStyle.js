@@ -26,6 +26,12 @@ const formStyle = {
       fontFamily: "DM Sans"
     },
   },
+  fieldstyle:{
+    border: '1px solid rgba(0, 0, 0, 0.1)',marginBottom: '0px'
+  }
+  
 };
+
+
 
 export default formStyle;
