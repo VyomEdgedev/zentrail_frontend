@@ -11,7 +11,7 @@ export default function Navbar() {
     {
       label: "About Us",
       icon: "/icons/about.png",
-      link: "/about",
+      link: "/aboutus",
     },
     {
       label: "Category",
@@ -26,7 +26,7 @@ export default function Navbar() {
     {
       label: "Contact",
       icon: "/icons/contact.png",
-      link: "/contact",
+      link: "/contactus",
     },
   ];
 
@@ -62,7 +62,7 @@ export default function Navbar() {
 
           <div className=" hidden md:flex  md:gap-[20px] lg:gap-[65px] items-center text-center">
             {menuItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.link}
                 className="flex flex-col items-center  text-[18px]"
@@ -75,7 +75,7 @@ export default function Navbar() {
                   className="w-[35px] h-[35px] mb-0.5"
                 />
                 <span className="commonText">{item.label}</span>
-              </a>
+              </Link>
             ))}
           </div>
           <div className="flex items-center gap-3">
@@ -111,9 +111,9 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col items-start px-6 gap-6 mt-4">
               {menuItems.map((item) => (
-                <a
+                <Link
                   key={item.label}
-                  // href={item.link}
+                  href={item.link}
                   className="flex items-center gap-3 text-lg font-medium"
                   onClick={() => setIsOpen(false)} // close menu on click
                 >
@@ -124,7 +124,7 @@ export default function Navbar() {
                     alt={item.label}
                   />
                   {item.label}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
