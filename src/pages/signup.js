@@ -10,17 +10,17 @@ const signup = () => {
   return (
     <>
       <SEO
-        url="http://www.poornamevents.com/about-us"
-        metaTitle="Let’s begin your travel story"
+        // url="http://localhost:3000/signup"
+        metaTitle="Create Your ZenTrail Account and Let’s begin your travel story"
         metaDescription="Welcome to ZenTrail — where every journey begins with a feeling. Whether you're in search of        peace, thrill, or just something new — we help you discover destinations that match your mood.
         Just sign up in a few simple steps and unlock a world of authentic, unexplored trails."
-        keywords="wedding planner in MP, about Poornam Events"
-        canonical="http://www.poornamevents.com/about-us"
-        ogTitle="Let’s begin your travel story"
+        keywords="Welcome to ZenTrai"
+        // canonical="http://localhost:3000/signup"
+        ogTitle="Create Your ZenTrail Account and Let’s begin your travel story"
         ogDescription="Welcome to ZenTrail — where every journey begins with a feeling. Whether you're in search of peace, thrill, or just something new — we help you discover destinations that match your mood.
         Just sign up in a few simple steps and unlock a world of authentic, unexplored trails."
         ogImage={`${SITE_URL}/og-image.jpg`}
-        twitterTitle="Let’s begin your travel story"
+        twitterTitle="Create Your ZenTrail Account and Let’s begin your travel story"
         twitterDescription="Welcome to ZenTrail — where every journey begins with a feeling. Whether you're in search of peace, thrill, or just something new — we help you discover destinations that match your mood.
         Just sign up in a few simple steps and unlock a world of authentic, unexplored trails."
         twitterImage={`${SITE_URL}/logoo.jpg`}
@@ -41,7 +41,7 @@ const signup = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
             <div className="order-2 sm:order-1">
               <SignupForm />
-              <p className="dm_sans font-medium text-[16px] leading-[25px] mt-2 text-slate-700">Already have an Account? <Link href="signin"><u>SignIn</u></Link></p>
+              <p className="dm_sans font-medium text-[16px] leading-[25px] mt-2 text-slate-700">{`Already have an Account?`} <Link href="signin"><u>{`SignIn`}</u></Link></p>
             </div>
             <div className="order-1 sm:order-2 py-4">
               <h2 className="dm_sans font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-snug">
