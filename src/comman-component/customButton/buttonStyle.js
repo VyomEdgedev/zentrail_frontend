@@ -5,32 +5,31 @@ const buttonStyle = {
   },
   notfoundButton: {
     padding: {
-      xs: "12px 16px",
-      sm: "14px 18px",
+      xs: "12px 15px",
+      sm: "14px 17px",
       md: "16px 20px",
     },
     backgroundColor: "#26B6E6",
     color: "#FFFFFF",
     fontSize: {
       xs: "16px",
-      sm: "18px",
+      sm: "17px",
       md: "20px",
     },
     fontWeight: 500,
     borderRadius: "12px",
   },
   notfoundButton1: {
-    width: { xs: "100%", sm: "220px", md: "251px" },
     padding: {
-      xs: "12px 16px",
-      sm: "14px 18px",
+      xs: "12px 15px",
+      sm: "14px 17px",
       md: "16px 20px",
     },
     backgroundColor: "#1A2E33",
     color: "#FFFFFF",
     fontSize: {
       xs: "16px",
-      sm: "18px",
+      sm: "17px",
       md: "20px",
     },
     fontWeight: 500,
@@ -38,17 +37,16 @@ const buttonStyle = {
   },
 
   notfoundButton2: {
-    width: { xs: "100%", sm: "170px", md: "198px" },
     padding: {
-      xs: "12px 16px",
-      sm: "14px 18px",
+      xs: "12px 15px",
+      sm: "14px 17px",
       md: "16px 20px",
     },
     backgroundColor: "#1A2E33",
     color: "#FFFFFF",
     fontSize: {
       xs: "16px",
-      sm: "18px",
+      sm: "17px",
       md: "20px",
     },
     fontWeight: 500,

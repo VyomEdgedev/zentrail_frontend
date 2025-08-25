@@ -7,18 +7,17 @@ import React from "react";
 const NotFound = () => {
   return (
     <div className="bg-[#DEF2FC]">
-      <div className=" custom-container py-20">
-    
-        <div className="flex flex-col items-center justify-center text-center">
-        <div className=" w-[738px] h-[214px] mt-20 relative">
-  <Image
-    src="/404image.png"
-    alt="404image"
-    fill
-    
-  />
-</div>
-          <div className="mt-10 dm_sans ">
+      <div className=" custom-container py-10 sm:py-15  md:py-20">
+        <div className="flex flex-col items-center justify-center text-center gap-5 sm:gap-10">
+          <div className=" relative mt-2 sm:mt-16 md:mt-20 w-full sm:w-[500px] md:w-[738px] h-[150px] sm:h-[180px] md:h-[214px] mx-auto">
+            <Image
+              src="/404image.png"
+              alt="404image"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <div className=" dm_sans ">
             <h1 className="responsive-heading text-[#1A2E33]">
               <span className="font-bold ">{`Oops !`}</span>{" "}
               {`Lost in the Trails?`}
@@ -30,8 +29,8 @@ const NotFound = () => {
               {`But don’t worry — your next adventure is just a click away.`}
             </h6>
           </div>
-          <div className="flex flex-wrap justify-center sm:justify-normal gap-1 md:gap-2 sm:gap-2 mt-2.5">
-            <div className="manrope">
+          <div className="flex flex-wrap justify-center md:justify-normal  gap-1 sm:gap-2 py-1 sm:py-1.5 md:py-2.5">
+            <div>
               <CustomButton sx={buttonStyle.notfoundButton}>
                 Back to Home
               </CustomButton>
