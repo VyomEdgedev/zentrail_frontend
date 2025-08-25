@@ -1,27 +1,32 @@
-import Head from 'next/head';
+import Head from "next/head";
+import { useRouter } from "next/router";
 
 const SEO = ({
   metaTitle,
-  metaDescription = '',
-  keywords = '',
-  url = '',
-  canonical = '',
+  metaDescription = "",
+  keywords = "",
+  // url = "",
+  // canonical = "",
   ogTitle,
   ogDescription,
-  ogImage,
+  // ogImage,
   twitterTitle,
   twitterDescription,
   twitterImage,
-  robots = 'index, follow',
-  favicon = '/favicon.ico',
+  robots = "index, follow",
+  favicon = "/favicon.ico",
 }) => {
-  // Validate required fields
+  const router = useRouter();
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+  const url = `${baseUrl}${router.asPath}`;
+  const canonical = url;
+
   if (!metaTitle) {
     console.warn('SEO component: "metaTitle" is required but missing.');
     return null;
   }
 
-const finalOgImage = 'https://res.cloudinary.com/dtidgvjlt/image/upload/v1753038213/logo_kjfvsf.png';
+  const finalOgImage = "/zantraillogo.png";
   return (
     <Head>
       {/* General Meta */}
@@ -40,36 +45,32 @@ const finalOgImage = 'https://res.cloudinary.com/dtidgvjlt/image/upload/v1753038
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url} />
       <meta property="og:title" content={ogTitle || metaTitle} />
-      <meta property="og:description" content={ogDescription || metaDescription} />
+      <meta
+        property="og:description"
+        content={ogDescription || metaDescription}
+      />
       <meta property="og:image" content={finalOgImage} />
 
       {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:url" content={url} />
       <meta name="twitter:title" content={twitterTitle || metaTitle} />
-      <meta name="twitter:description" content={twitterDescription || metaDescription} />
+      <meta
+        name="twitter:description"
+        content={twitterDescription || metaDescription}
+      />
       {twitterImage && <meta name="twitter:image" content={finalOgImage} />}
 
-       <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "logo": "/favicon.ico"
-            })
-          }}
-        />
-
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            logo: "/favicon.ico",
+          }),
+        }}
+      />
     </Head>
   );
 };
 
 export default SEO;
-
-
-
-
-
-
-
-    
-  
