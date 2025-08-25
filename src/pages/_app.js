@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import Layout from "../layout/layout";
 import Layout1 from "../layout/layout1";
 import Head from "next/head";
-import { Geist, Geist_Mono ,DM_Sans} from "next/font/google";
+import { Geist, Geist_Mono ,DM_Sans, Manrope} from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,6 +18,11 @@ const dmSans = DM_Sans({
   weight: ["400", "500", "600", "700"], 
   variable: "--font-dm-sans",
 });
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], 
+  variable: "--font-dm-sans",
+});
 const layouts = {
   default: Layout,
   layout1: Layout1,
@@ -25,7 +30,7 @@ const layouts = {
 export default function App({ Component, pageProps }) {
   const Layout = layouts[Component.layout] || layouts.default;
   return (
-    <div className={`${geistSans.variable} ${geistMono.variable} ${dmSans.variable}`}>
+    <div className={`${geistSans.variable} ${geistMono.variable} ${dmSans.variable} ${manrope.variable}`}>
       <Head>
         <title>zentrail</title>
         <link rel="icon" href="/favicon.ico" />

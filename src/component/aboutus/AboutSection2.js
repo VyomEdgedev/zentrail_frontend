@@ -23,12 +23,11 @@ const AboutSection2 = () => {
                 </div>
               </div>
               <div>
-                <h2 className="dm_sans text-[#1A2E33] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-medium leading-[24px]">
-                  {`A Mission Founded in Peace`}
-                </h2>
+                <h3 className="dm_sans text-[#1A2E33] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-medium leading-[24px]">
+                  {`Mood-Based Travel`}
+                </h3>
                 <p className="text-[#4D5D60] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-medium leading-[24px] mt-1">
-                  {`To help people discover places where nature heals, and silence
-                          speaks.`}
+                  {`Whether you’re feeling tired, curious, heartbroken, or free — ZenTrail has a trail that matches your state of mind.`}
                 </p>
               </div>
             </div>
@@ -48,9 +47,9 @@ const AboutSection2 = () => {
                 </div>
               </div>
               <div>
-                <h2 className="dm_sans text-[#1A2E33] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-medium leading-[24px]">
+                <h3 className="dm_sans text-[#1A2E33] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-medium leading-[24px]">
                   {`Soulful Getaways`}
-                </h2>
+                </h3>
                 <p className="text-[#4D5D60] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-medium leading-[24px] mt-1">
                   {`From hidden Himalayan villages to forest retreats, from spiritual walks to eco-conscious slow travel, we take you places that make you feel found.`}
                 </p>
